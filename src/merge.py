@@ -16,6 +16,7 @@ def merge(x: list[int], y: list[int]) -> list[int]:
     # FIXME: fill out the loop so you merge the lists
     # until one of them is empty
     while i < len(x) and j < len(y):
+        z = merge(x, y)
         break  # FIXME: you shouldn't just break here
     # At least one of the lists is empty now. Copy the
     # remainder of the other into z.
